@@ -1,0 +1,7 @@
+apiRules:
+- exclude:
+    uidRegex: ^LittleBlog\.Web$
+    type: Namespace
+- exclude:
+    uidRegex: ^LittleBlog\.Web\.Areas\.Identity$
+    type: Namespace

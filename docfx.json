@@ -3,14 +3,21 @@
     {
       "src": [
         {
+          "src": "../../LittleBlog/",
           "files": [
-            "src/**.csproj"
+            "**.sln"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**"
           ]
         }
       ],
       "dest": "api",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": false,
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
@@ -23,8 +30,11 @@
       },
       {
         "files": [
+          "fusion/**",
           "articles/**.md",
           "articles/**/toc.yml",
+          "articles2/**.md",
+          "articles2/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
